@@ -1,0 +1,32 @@
+[general]
+import = ["dracula.toml", "keybindings.toml"]
+
+[window] 
+decorations = "none" 
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
+
+[terminal.shell]
+program = "wsl"
+args = ["--distribution", "NixOS", "--cd", "/home/nixos"]
+#osc52 = "CopyPaste"
+
+[selection] 
+save_to_clipboard = true
+
+[env]
+TERM = "xterm-256color"

@@ -145,17 +145,17 @@ vim.api.nvim_create_autocmd("FileType", {
 -- Save folds on close
 vim.opt.viewoptions = "folds,cursor"
 
-vim.api.nvim_create_autocmd("BufWinLeave", {
-  callback = function()
-    vim.cmd("mkview")
-  end,
-})
-
-vim.api.nvim_create_autocmd("BufWinEnter", {
-  callback = function()
-    vim.cmd("silent! loadview")
-  end,
-})
+--vim.api.nvim_create_autocmd("BufWinLeave", {
+  --callback = function()
+    --vim.cmd("mkview")
+  --end,
+--})
+--
+--vim.api.nvim_create_autocmd("BufWinEnter", {
+  --callback = function()
+    --vim.cmd("silent! loadview")
+  --end,
+--})
 
 -- Plugins Configuration (deferred until after startup)
 vim.schedule(function()

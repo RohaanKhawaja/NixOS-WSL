@@ -5,3 +5,6 @@ This setup is incredibly specific to NixOs - with a specific focus on reproducib
 To create a symlimk simply type stow followed by the name of the directory - except for nixos. For nixos run the command: sudo stow -t /etc/nixos nixos 
 
 NEW: There is an autoStow script that will do all of the above and comes in a NIX and NIX free version.
+
+
+TODO: Explain how stowing works for the alacritty file on the WSL setup
